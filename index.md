@@ -61,9 +61,6 @@ the same things over and over again.
 
 Data files for the workshop are available here: ({{page.dataurl %}})[{{page.dataurl %}}]
 
-
-<br>
-
 <h2>Requirements</h2>
 
 <p>
