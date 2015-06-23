@@ -4,9 +4,9 @@ root: .
 lastupdated: April 16, 2015
 contributors: ["Greg Wilson", "Ethan White", "Jens van der Linden", "Raniere Silva", "Meg Stanton", "Amy Brown", "Doug Latornell"]
 maintainers: []
-domain: Ecology
-topic: Shell
-software: Shell
+domain: ecology
+topic: shell
+software: shell
 dataurl:
 status: Teaching
 ---
