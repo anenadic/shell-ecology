@@ -2,13 +2,13 @@
 layout: lesson
 root: .
 lastupdated: April 16, 2015
-contributors: ["First Last", "First Last", "Pls Add Others"]
-maintainers: ["First Last", "First Last"]
+contributors: ["Greg Wilson", "Ethan White", "Jens van der Linden", "Raniere Silva", "Meg Stanton", "Amy Brown", "Doug Latornell"]
+maintainers: []
 domain: Domain Name
 topic: Topic
-software: 
+software: Shell
 dataurl:
-status: Under Development
+status: Teaching
 ---
 
 <!-- USING THIS LESSON TEMPLATE -->
@@ -78,6 +78,8 @@ To most effectively use these materials, please make sure to install everything
 {% include spreadsheetSetup.html %}
 {% elsif page.software == "R" %}
 {% include rSetup.html %}
+{% elsif page.software == "Shell" || page.software == "shell" %}
+{% include shellSetup.html %}
 {% else %}
 {% include anySetup.html %}
 {% endif %}
