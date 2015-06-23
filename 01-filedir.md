@@ -1,10 +1,11 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Files and Directories
+minutes:
 ---
 
-#### Objectives
+## Learning Objectives
 
 *   Explain the similarities and differences between a file and a directory.
 *   Translate an absolute path into a relative path and vice versa.
@@ -12,6 +13,8 @@ title: Files and Directories
 *   Explain the steps in the shell's read-run-print cycle.
 *   Identify the actual command, flags, and filenames in a command-line call.
 *   Demonstrate the use of tab completion, and explain its advantages.
+
+## Lesson
 
 The part of the operating system responsible for managing files and directories
 is called the [file system](../../gloss.html#filesystem).
@@ -94,8 +97,7 @@ online tool that gives great explanations for commands, even the more complicate
 http://explainshell.com
 
 
-
-> #### Alphabet Soup
+> ### Alphabet Soup
 > 
 > If the command to find out who we are is `whoami`, the command to find
 > out where we are ought to be called `whereami`, so why is it `pwd`
@@ -184,7 +186,7 @@ without it,
 the shell thinks we're trying to run a command called `ls-F`,
 which doesn't exist.
 
-> #### What's In A Name?
+> ### What's In A Name?
 > 
 > You may have noticed that all of Vlad's files' names are "something dot
 > something". This is just a convention: we can call a file `mythesis` or
@@ -365,7 +367,7 @@ which means "the current working directory".
 It may seem redundant to have a name for it,
 but we'll see some uses for it soon.
 
-> #### Orthogonality
+> ### Orthogonality
 > 
 > The special names `.` and `..` don't belong to `ls`;
 > they are interpreted the same way by every program.
@@ -377,7 +379,7 @@ but we'll see some uses for it soon.
 > Orthogonal systems tend to be easier for people to learn
 > because there are fewer special cases and exceptions to keep track of.
 
-#### Nelle's Pipeline: Organizing Files
+### Nelle's Pipeline: Organizing Files
 
 Knowing just this much about files and directories,
 Nelle is ready to organize the files that the protein assay machine will create.
@@ -442,7 +444,7 @@ and so on.
 This is called [tab completion](../../gloss.html#tab-completion),
 and we will see it in many other tools as we go on.
 
-> #### Whitespace characters
+> ### Whitespace characters
 >
 > What if someone wants filename including spaces?
 > It is possible -
@@ -450,7 +452,7 @@ and we will see it in many other tools as we go on.
 > however
 > no-one really does that, it can lead to pretty damaging mistakes.
 
-#### Key Points
+### Key Points
 *   The file system is responsible for managing information on the disk.
 *   Information is stored in files, which are stored in directories (folders).
 *   Directories can also store other directories, which forms a directory tree.
@@ -466,7 +468,8 @@ and we will see it in many other tools as we go on.
     but is normally used to indicate the type of data in the file.
 *   Most commands take options (flags) which begin with a '-'.
 
-#### Challenges
+
+## Exercises
 
 <img src="img/filesystem-challenge.svg" alt="Filesystem for Challenge Questions" />
 
