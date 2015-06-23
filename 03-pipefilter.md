@@ -1,15 +1,19 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Pipes and Filters
+minutes:
 ---
 
-#### Objectives
+## Learning Objectives
+
 *   Redirect a command's output to a file.
 *   Process a file instead of keyboard input using redirection.
 *   Construct command pipelines with two or more stages.
 *   Explain what usually happens if a program or pipeline isn't given any input to process.
 *   Explain Unix's "small pieces, loosely joined" philosophy.
+
+## Lesson
 
 Now that we know a few basic commands,
 we can finally look at the shell's most powerful feature:
@@ -51,7 +55,7 @@ $ wc *.pdb
 ~~~
 {:class="out"}
 
-> #### Wildcards
+> ### Wildcards
 > 
 > `*` is a [wildcard](../../gloss.html#wildcard). It matches zero or more
 > characters, so `*.pdb` matches `ethane.pdb`, `propane.pdb`, and so on.
@@ -284,7 +288,7 @@ can be combined with every other program that behaves this way as well.
 You can *and should* write your programs this way
 so that you and other people can put those programs into pipes to multiply their power.
 
-> #### Redirecting Input
+> ### Redirecting Input
 > 
 > As well as using `>` to redirect a program's output, we can use `<` to
 > redirect its input, i.e., to read from a file instead of from standard
@@ -295,7 +299,7 @@ so that you and other people can put those programs into pipes to multiply their
 > have told the shell to send the contents of `ammonia.pdb` to `wc`'s
 > standard input.
 
-#### Nelle's Pipeline: Checking Files
+### Nelle's Pipeline: Checking Files
 
 Nelle has run her samples through the assay machines
 and created 1520 files in the `north-pacific-gyre/2012-07-03` directory described earlier.
@@ -384,12 +388,13 @@ the '\*' matches any number of characters;
 the expression `[AB]` matches either an 'A' or a 'B',
 so this matches all the valid data files she has.
 
-#### Key Points
+## Key Points
+
 *   `command > file` redirects a command's output to a file.
 *   `first | second` is a pipeline: the output of the first command is used as the input to the second.
 *   The best way to use the shell is to use pipes to combine simple single-purpose programs (filters).
 
-#### Challenges
+## Exercises
 
 1.  If we run `sort` on this file:
 
