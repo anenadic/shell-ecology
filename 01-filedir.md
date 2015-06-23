@@ -97,7 +97,7 @@ online tool that gives great explanations for commands, even the more complicate
 http://explainshell.com
 
 
-> ### Alphabet Soup
+> #### Alphabet Soup
 > 
 > If the command to find out who we are is `whoami`, the command to find
 > out where we are ought to be called `whereami`, so why is it `pwd`
@@ -186,7 +186,7 @@ without it,
 the shell thinks we're trying to run a command called `ls-F`,
 which doesn't exist.
 
-> ### What's In A Name?
+> #### What's In A Name?
 > 
 > You may have noticed that all of Vlad's files' names are "something dot
 > something". This is just a convention: we can call a file `mythesis` or
@@ -367,7 +367,7 @@ which means "the current working directory".
 It may seem redundant to have a name for it,
 but we'll see some uses for it soon.
 
-> ### Orthogonality
+> #### Orthogonality
 > 
 > The special names `.` and `..` don't belong to `ls`;
 > they are interpreted the same way by every program.
@@ -444,7 +444,7 @@ and so on.
 This is called [tab completion](../../gloss.html#tab-completion),
 and we will see it in many other tools as we go on.
 
-> ### Whitespace characters
+> #### Whitespace characters
 >
 > What if someone wants filename including spaces?
 > It is possible -
