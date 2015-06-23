@@ -435,8 +435,6 @@ North Whitehead wrote in 1911, "Civilization advances by extending the
 number of important operations which we can perform without thinking
 about them."
 
-<div class="keypoints" markdown="1">
-
 ## Key Points
 
 *   Use `find` to find files and directories, and `grep` to find text patterns in files.
