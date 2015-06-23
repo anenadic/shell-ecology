@@ -80,7 +80,8 @@ the command line is often the easiest way to interact with remote machines.
 As clusters and cloud computing become more popular for scientific data crunching,
 being able to drive them is becoming a necessary skill.
 
-### Key Points
+## Key Points
+
 *   A shell is a program whose primary purpose is to read commands and run other programs.
 *   The shell's main advantages are its high action-to-keystroke ratio,
     its support for automating repetitive tasks,

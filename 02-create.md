@@ -1,14 +1,18 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Creating Things
+minutes:
 ---
 
-#### Objectives    
-*   Create a directory hierarchy that matches a given diagram.   
-*   Create files in that hierarchy using an editor or by copying and renaming existing files.   
+## Learning Objectives
+
+*   Create a directory hierarchy that matches a given diagram.
+*   Create files in that hierarchy using an editor or by copying and renaming existing files.
 *   Display the contents of a directory using the command line.
 *   Delete specified files and/or directories.
+
+## Lesson
 
 We now know how to explore files and directories,
 but how do we create them in the first place?
@@ -133,7 +137,7 @@ $ ls
 ~~~
 {:class="in"}
 
-> #### Deleting Is Forever
+> ### Deleting Is Forever
 > 
 > Unix doesn't have a trash bin: when we delete files, they are unhooked
 > from the file system so that their storage space on disk can be
@@ -209,7 +213,7 @@ $ rmdir thesis
 ~~~
 {:class="in"}
 
-> #### With Great Power Comes Great Responsibility
+> ### With Great Power Comes Great Responsibility
 > 
 > Removing the files in a directory just so that we can remove the
 > directory quickly becomes tedious. Instead, we can use `rm` with the
@@ -348,7 +352,7 @@ thesis/quotations.txt
 ~~~
 {:class="err"}
 
-> #### Another Useful Abbreviation
+> ### Another Useful Abbreviation
 > 
 > The shell interprets the character `~` (tilde) at the start of a path to
 > mean "the current user's home directory". For example, if Vlad's home
@@ -356,12 +360,13 @@ thesis/quotations.txt
 > `/home/vlad/data`. This only works if it is the first character in the
 > path: `here/there/~/elsewhere` is *not* `/home/vlad/elsewhere`.
 
-#### Key Points
+## Key Points
+
 *   Unix documentation uses '^A' to mean "control-A".
 *   The shell does not have a trash bin: once something is deleted, it's really gone.
 *   Nano is a very simple text editor&mdash;please use something else for real work.
 
-#### Challenges
+## Exercises
 
 1.  What is the output of the closing `ls` command in the sequence shown below?
 

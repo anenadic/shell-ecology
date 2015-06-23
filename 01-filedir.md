@@ -452,7 +452,8 @@ and we will see it in many other tools as we go on.
 > however
 > no-one really does that, it can lead to pretty damaging mistakes.
 
-### Key Points
+## Key Points
+
 *   The file system is responsible for managing information on the disk.
 *   Information is stored in files, which are stored in directories (folders).
 *   Directories can also store other directories, which forms a directory tree.
