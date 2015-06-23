@@ -17,7 +17,7 @@ under [these licenses](LICENSE.md).
 
 ## Working With GitHub
 
-1.  Fork the `datacarpentry/datacarpentry` repository on GitHub.
+1.  Fork the `datacarpentry/lesson-name` repository on GitHub.
 
 2.  Clone that repository to your own machine.
 
@@ -29,7 +29,7 @@ under [these licenses](LICENSE.md).
 4.  Make your changes, commit them, and push them to your repository on GitHub.
 
 5.  Send a pull request to the `master` branch of the main datacarpentry
-    repository at http://github.com/datacarpentry/datacarpentry.
+    repository at http://github.com/datacarpentry/lesson-name.
 
 If it is easier for you to send them to us some other way,
 please mail us at
@@ -40,11 +40,11 @@ we'd rather have you doing the former.
 
 ## Locations and Formats
 
-Every lesson has a sub-directory of its own, while individual topics are files
-in that directory.  For example, the `lessons/shell` directory holding our
-introduction to the shell contains the files `00-intro.md`, `01-filedir.md` and
-so on.  (We use two digits followed by a one-word topic key to ensure files
-appear in the right order when listed.)
+Every lesson has a repository of its own, while individual topics are files
+in that directory.  For example, the `shell-ecology` directory holding our
+introduction to the shell for ecology contains the files `00-intro.md`, 
+`01-filedir.md` and so on.  (We use two digits followed by a one-word topic 
+key to ensure files appear in the right order when listed.)
 
 Lessons may be written in Markdown, as IPython Notebooks, or in other formats.
 However, as explained in [the README file](README.md), Jekyll (the tool GitHub
@@ -71,5 +71,4 @@ guidelines:
 
 *   *Where can I get help?*
     <br/>
-    Mail us at [board@datacarpentry.org](mailto:board@datacarpentry.org),
-    come chat with us on [our IRC channel](irc://moznet/sciencelab),
+    Mail us at [board@datacarpentry.org](mailto:board@datacarpentry.org)
