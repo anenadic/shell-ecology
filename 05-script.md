@@ -1,17 +1,18 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Shell Scripts
+minutes:
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+## Learning Objectives
+
 *   Write a shell script that runs a command or series of commands for a fixed set of files.
 *   Run a shell script from the command line.
 *   Write a shell script that operates on a set of files defined by the user on the command line.
 *   Create pipelines that include user-written shell scripts.
 
-</div>
+## Lesson
 
 We are finally ready to see what makes the shell such a powerful programming environment.
 We are going to take the commands we repeat frequently and save them in files
@@ -303,7 +304,7 @@ what they discover about their data and their workflow with one call to `history
 and a bit of editing to clean up the output
 and save it as a shell script.
 
-#### Nelle's Pipeline: Creating a Script
+### Nelle's Pipeline: Creating a Script
 
 An off-hand comment from her supervisor has made Nelle realize that
 she should have provided a couple of extra parameters to `goostats` when she processed her files.
@@ -371,20 +372,14 @@ she could modify her script to check for command-line parameters,
 and use `*[AB].txt` if none were provided.
 Of course, this introduces another tradeoff between flexibility and complexity.
 
-<div class="keypoints" markdown="1">
-
-#### Key Points
+## Key Points
 *   Save commands in files (usually called shell scripts) for re-use.
 *   `bash filename` runs the commands saved in a file.
 *   `$*` refers to all of a shell script's command-line parameters.
 *   `$1`, `$2`, etc., refer to specified command-line parameters.
 *   Letting users decide what files to process is more flexible and more consistent with built-in Unix commands.
 
-</div>
-
-<div class="challenges" markdown="1">
-
-#### Challenges
+## Exercises
 
 1.  Leah has several hundred data files, each of which is formatted like this:
 
@@ -461,5 +456,3 @@ echo $*.dat
     </td>
   </tr>
 </table>
-
-</div>
