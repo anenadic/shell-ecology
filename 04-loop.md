@@ -26,14 +26,14 @@ We can't use:
 ~~~
 $ mv *.dat original-*.dat
 ~~~
-{:class="in"}
+
 
 because that would expand (in the two-file case) to:
 
 ~~~
 $ mv basilisk.dat unicorn.dat
 ~~~
-{:class="in"}
+
 
 This wouldn't back up our files:
 it would replace the content of `unicorn.dat` with whatever's in `basilisk.dat`.
@@ -44,11 +44,11 @@ Here's a simple example that displays the first three lines of each file in turn
 
 ~~~
 $ for filename in basilisk.dat unicorn.dat
-> do
->    head -3 $filename
-> done
+do
+    head -3 $filename
+done
 ~~~
-{:class="in"}
+
 ~~~
 COMMON NAME: basilisk
 CLASSIFICATION: basiliscus vulgaris
@@ -57,7 +57,7 @@ COMMON NAME: unicorn
 CLASSIFICATION: equus monoceros
 UPDATED: 1738-11-24
 ~~~
-{:class="out"}
+
 
 When the shell sees the keyword `for`,
 it knows it is supposed to repeat a command (or group of commands) once for each thing in a list.
@@ -91,7 +91,7 @@ do
     head -3 $x
 done
 ~~~
-{:class="in"}
+
 
 or:
 
@@ -101,7 +101,7 @@ do
     head -3 $temperature
 done
 ~~~
-{:class="in"}
+
 
 it would work exactly the same way.
 *Don't do this.*
@@ -118,7 +118,7 @@ do
     head -100 $filename | tail -20
 done
 ~~~
-{:class="in"}
+
 
 The shell starts by expanding `*.dat` to create the list of files it will process.
 The [loop body](../../gloss.html#loop-body)
@@ -129,14 +129,14 @@ For example:
 ~~~
 $ echo hello there
 ~~~
-{:class="in"}
+
 
 prints:
 
 ~~~
 hello there
 ~~~
-{:class="out"}
+
 
 In this case,
 since the shell expands `$filename` to be the name of a file,
@@ -150,7 +150,7 @@ do
     head -100 $filename | tail -20
 done
 ~~~
-{:class="in"}
+
 
 because then the first time through the loop,
 when `$filename` expanded to `basilisk.dat`, the shell would try to run `basilisk.dat` as a program.
@@ -219,7 +219,7 @@ do
     mv $filename original-$filename
 done
 ~~~
-{:class="in"}
+
 
 This loop runs the `mv` command once for each filename.
 The first time,
@@ -229,14 +229,14 @@ the shell executes:
 ~~~
 mv basilisk.dat original-basilisk.dat
 ~~~
-{:class="in"}
+
 
 The second time, the command is:
 
 ~~~
 mv unicorn.dat original-unicorn.dat
 ~~~
-{:class="in"}
+
 
 > #### Measure Twice, Run Once
 > 
@@ -276,11 +276,11 @@ these are ones whose names end in 'A' or 'B', rather than 'Z':
 ~~~
 $ cd north-pacific-gyre/2012-07-03
 $ for datafile in *[AB].txt
-> do
->     echo $datafile
-> done
+do
+    echo $datafile
+done
 ~~~
-{:class="in"}
+
 ~~~
 NENE01729A.txt
 NENE01729B.txt
@@ -289,7 +289,7 @@ NENE01736A.txt
 NENE02043A.txt
 NENE02043B.txt
 ~~~
-{:class="out"}
+
 
 Her next step is to decide
 what to call the files that the `goostats` analysis program will create.
@@ -298,11 +298,11 @@ so she modifies her loop to do that:
 
 ~~~
 $ for datafile in *[AB].txt
-> do
->     echo $datafile stats-$datafile
-> done
+do
+    echo $datafile stats-$datafile
+done
 ~~~
-{:class="in"}
+
 ~~~
 NENE01729A.txt stats-NENE01729A.txt
 NENE01729B.txt stats-NENE01729B.txt
@@ -311,7 +311,7 @@ NENE01736A.txt stats-NENE01736A.txt
 NENE02043A.txt stats-NENE02043A.txt
 NENE02043B.txt stats-NENE02043B.txt
 ~~~
-{:class="out"}
+
 
 She hasn't actually run `goostats` yet,
 but now she's sure she can select the right files and generate the right output filenames.
@@ -328,7 +328,7 @@ the shell redisplays the whole loop on one line
 ~~~
 $ for datafile in *[AB].txt; do echo $datafile stats-$datafile; done
 ~~~
-{:class="in"}
+
 
 Using the left arrow key,
 Nelle backs up and changes the command `echo` to `goostats` ('bash' will be explained in next lesson):
@@ -336,7 +336,7 @@ Nelle backs up and changes the command `echo` to `goostats` ('bash' will be expl
 ~~~
 $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done
 ~~~
-{:class="in"}
+
 
 When she presses enter,
 the shell runs the modified command.
@@ -350,7 +350,7 @@ and edits it to read:
 ~~~
 $ for datafile in *[AB].txt; do echo $datafile; bash goostats $datafile stats-$datafile; done 
 ~~~
-{:class="in"}
+
 
 > #### Beginning and End
 >
@@ -367,7 +367,7 @@ NENE01729B.txt
 NENE01736A.txt
 ...
 ~~~
-{:class="out"}
+
 
 1518 times 5 seconds,
 divided by 60,

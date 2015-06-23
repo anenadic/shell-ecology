@@ -29,7 +29,7 @@ we will use a file that contains three haikus taken from a
 ~~~
 $ cat haiku.txt
 ~~~
-{:class="in"}
+
 ~~~
 The Tao that is seen
 Is not the true Tao, until
@@ -43,7 +43,6 @@ Yesterday it worked
 Today it is not working
 Software is like that.
 ~~~
-{:class="out"}
 
 > #### Forever, or Five Years
 >
@@ -56,13 +55,12 @@ Let's find lines that contain the word "not":
 ~~~
 $ grep not haiku.txt
 ~~~
-{:class="in"}
+
 ~~~
 Is not the true Tao, until
 "My Thesis" not found
 Today it is not working
 ~~~
-{:class="out"}
 
 Here, `not` is the pattern we're searching for.
 It's pretty simple:
@@ -75,12 +73,11 @@ Let's try a different pattern: "day".
 ~~~
 $ grep day haiku.txt
 ~~~
-{:class="in"}
+
 ~~~
 Yesterday it worked
 Today it is not working
 ~~~
-{:class="out"}
 
 This time,
 the output is lines containing the words "Yesterday" and "Today",
@@ -92,7 +89,6 @@ so that only lines with the word "day" will be printed:
 ~~~
 $ grep -w day haiku.txt
 ~~~
-{:class="in"}
 
 In this case, there aren't any, so `grep`'s output is empty.
 
@@ -101,13 +97,13 @@ Another useful option is `-n`, which numbers the lines that match:
 ~~~
 $ grep -n it haiku.txt
 ~~~
-{:class="in"}
+
+
 ~~~
 5:With searching comes loss
 9:Yesterday it worked
 10:Today it is not working
 ~~~
-{:class="out"}
 
 Here, we can see that lines 5, 9, and 10 contain the letters "it".
 
@@ -120,7 +116,8 @@ in any mix of upper and lower case:
 ~~~
 $ grep -i -v the haiku.txt
 ~~~
-{:class="in"}
+
+
 ~~~
 You bring fresh toner.
 
@@ -130,7 +127,6 @@ Yesterday it worked
 Today it is not working
 Software is like that.
 ~~~
-{:class="out"}
 
 `grep` has lots of other options.
 To find informations about them, we can use 'man' again`.
@@ -140,7 +136,7 @@ and (if you're lucky) provides a few examples of how to use it:
 ~~~
 $ man grep
 ~~~
-{:class="in"}
+
 ~~~
 GREP(1)                                                                                              GREP(1)
 
@@ -176,7 +172,8 @@ Interpret PATTERN as a list of fixed strings, separated by newlines, any of  whi
 matched.  (-F is specified by POSIX.)
 ...        ...        ...
 ~~~
-{:class="out"}
+
+
 
 > #### Wildcards
 >
@@ -228,7 +225,7 @@ Sure enough,
 ~~~
 $ find . -type d -print
 ~~~
-{:class="in"}
+
 ~~~
 ./
 ./data
@@ -236,7 +233,6 @@ $ find . -type d -print
 ./tools
 ./tools/old
 ~~~
-{:class="out"}
 
 If we change `-type d` to `-type f`,
 we get a listing of all the files instead:
@@ -244,7 +240,7 @@ we get a listing of all the files instead:
 ~~~
 $ find . -type f -print
 ~~~
-{:class="in"}
+
 ~~~
 ./data/one.txt
 ./data/two.txt
@@ -252,7 +248,6 @@ $ find . -type f -print
 ./tools/format
 ./tools/stats
 ~~~
-{:class="out"}
 
 `find` automatically goes into subdirectories,
 their subdirectories,
@@ -263,11 +258,10 @@ we can use `-maxdepth` to restrict the depth of search:
 ~~~
 $ find . -maxdepth 1 -type f -print
 ~~~
-{:class="in"}
+
 ~~~
 ./notes.txt
 ~~~
-{:class="out"}
 
 The opposite of `-maxdepth` is `-mindepth`,
 which tells `find` to only report things that are at or below a certain depth.
@@ -276,14 +270,13 @@ which tells `find` to only report things that are at or below a certain depth.
 ~~~
 $ find . -mindepth 2 -type f -print
 ~~~
-{:class="in"}
+
 ~~~
 ./data/one.txt
 ./data/two.txt
 ./tools/format
 ./tools/stats
 ~~~
-{:class="out"}
 
 Another option is `-empty`,
 which restricts matches to empty files and directories:
@@ -291,23 +284,21 @@ which restricts matches to empty files and directories:
 ~~~
 $ find . -empty -print
 ~~~
-{:class="in"}
+
 ~~~
 ./thesis
 ./tools/old
 ~~~
-{:class="out"}
 
 Now let's try matching by name:
 
 ~~~
 $ find . -name *.txt -print
 ~~~
-{:class="in"}
+
 ~~~
 ./notes.txt
 ~~~
-{:class="out"}
 
 We expected it to find all the text files,
 but it only prints out `./notes.txt`.
@@ -318,7 +309,6 @@ the command we actually ran was:
 ~~~
 $ find . -name notes.txt -print
 ~~~
-{:class="in"}
 
 `find` did what we asked; we just asked for the wrong thing.
 
@@ -331,13 +321,12 @@ This way,
 ~~~
 $ find . -name '*.txt' -print
 ~~~
-{:class="in"}
+
 ~~~
 ./data/one.txt
 ./data/two.txt
 ./notes.txt
 ~~~
-{:class="out"}
 
 > #### Listing vs. Finding
 >
@@ -359,14 +348,13 @@ The simplest way is to put the `find` command inside `$()`:
 ~~~
 $ wc -l $(find . -name '*.txt' -print)
 ~~~
-{:class="in"}
+
 ~~~
 70  ./data/one.txt
 420  ./data/two.txt
 30  ./notes.txt
 520  total
 ~~~
-{:class="out"}
 
 When the shell executes this command,
 the first thing it does is run whatever is inside the `$()`.
@@ -377,7 +365,6 @@ the shell constructs the command:
 ~~~
 $ wc -l ./data/one.txt ./data/two.txt ./notes.txt
 ~~~
-{:class="in"}
 
 which is what we wanted.
 This expansion is exactly what the shell does when it expands wildcards like `*` and `?`,
@@ -392,11 +379,10 @@ by looking for the string "FE" in all the `.pdb` files below the current directo
 ~~~
 $ grep FE $(find . -name '*.pdb' -print)
 ~~~
-{:class="in"}
+
 ~~~
 ./human/heme.pdb:ATOM  25  FE  1  -0.924  0.535  -0.518
 ~~~
-{:class="out"}
 
 > #### Binary Files
 >
@@ -445,11 +431,9 @@ about them."
 
 1.  Write a short explanatory comment for the following shell script:
 
-    <div class="file" markdown="1">
     ~~~
     find . -name '*.dat' -print | wc -l | sort -n
     ~~~
-    </div>
 
 2.  The `-v` flag to `grep` inverts pattern matching, so that only lines
     which do *not* match the pattern are printed. Given that, which of
