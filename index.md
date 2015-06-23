@@ -43,9 +43,13 @@ in working with {{page.domain %}} data in {{page.topic %}}.
 
 ## Lessons:
 
-
-1. [Lesson 00 Name](00-lesson-00-name.html)
-2. [Lesson 01 Name](01-lesson-01-name.html)
+1. [Introducing the Shell](00-intro.html)
+2. [Files and Directories](01-filedir.html)
+3. [Creating Things](02-create.html)
+4. [Pipes and Filters](03-pipefilter.html)
+5. [Loops](04-loop.html)
+6. [Shell Scripts](05-script.html)
+7. [Finding Things](06-find.html)
 
 
 ## Data
