@@ -2,11 +2,11 @@
 layout: lesson
 root: .
 lastupdated: April 16, 2015
-contributors: ["Greg Wilson", "Ethan White", "Jens van der Linden", "Raniere Silva", "Meg Stanton", "Amy Brown", "Doug Latornell"]
+contributors: ["Greg Wilson", "Ethan White", "Jens Van Der Linden", "Raniere Silva", "Meg Stanton", "Amy Brown", "Doug Latornell"]
 maintainers: []
-domain: ecology
-topic: shell
-software: shell
+domain: Ecology
+topic: Shell
+software: Shell
 dataurl:
 status: Teaching
 ---
@@ -83,7 +83,7 @@ To most effectively use these materials, please make sure to install everything
 {% include spreadsheetSetup.html %}
 {% elsif page.software == "R" %}
 {% include rSetup.html %}
-{% elsif page.software == "Shell" || page.software == "shell" %}
+{% elsif page.software == "Shell" %}
 {% include shellSetup.html %}
 {% else %}
 {% include anySetup.html %}
