@@ -1,17 +1,18 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Finding Things
+minutes:
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+## Learning Objectives
+
 *   Use `grep` to select lines from text files that match simple patterns.
 *   Use `find` to find files whose names match simple patterns.
 *   Use the output of one command as the command-line parameters to another command.
 *   Explain what is meant by "text" and "binary" files, and why many common tools don't handle the latter well.
 
-</div>
+## Lesson
 
 You can guess someone's age by how they talk about search:
 young people use "Google" as a verb,
@@ -421,7 +422,7 @@ $ grep FE $(find . -name '*.pdb' -print)
 > modern programming languages, Python included, have borrowed a lot of
 > ideas from it, and imitation is also the sincerest form of praise.
 
-#### Conclusion
+### Conclusion
 
 The Unix shell is older than most of the people who use it. It has
 survived so long because it is one of the most productive programming
@@ -436,16 +437,13 @@ about them."
 
 <div class="keypoints" markdown="1">
 
-#### Key Points
+## Key Points
+
 *   Use `find` to find files and directories, and `grep` to find text patterns in files.
 *   `$(command)` inserts a command's output in place.
 *   `man command` displays the manual page for a given command.
 
-</div>
-
-<div class="challenges" markdown="1">
-
-#### Challenges
+## Exercises
 
 1.  Write a short explanatory comment for the following shell script:
 
@@ -468,5 +466,3 @@ about them."
     3. `grep -v temp $(find /data -name '*ose.dat' -print)`
 
     4. None of the above.
-
-</div>

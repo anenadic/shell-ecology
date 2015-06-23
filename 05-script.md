@@ -373,6 +373,7 @@ and use `*[AB].txt` if none were provided.
 Of course, this introduces another tradeoff between flexibility and complexity.
 
 ## Key Points
+
 *   Save commands in files (usually called shell scripts) for re-use.
 *   `bash filename` runs the commands saved in a file.
 *   `$*` refers to all of a shell script's command-line parameters.
