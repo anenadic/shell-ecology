@@ -399,8 +399,6 @@ so she decides to get some coffee and catch up on her reading.
 > then she can re-run `goostats` on `NENE01729B.txt` simply by typing
 > `!458`.
 
-<div class="keypoints" markdown="1">
-
 ## Key Points
 
 *   A `for` loop repeats commands once for every thing in a list.
@@ -410,10 +408,6 @@ so she decides to get some coffee and catch up on her reading.
 *   Give files consistent names that are easy to match with wildcard patterns to make it easy to select them for looping.
 *   Use the up-arrow key to scroll up through previous commands to edit and repeat them.
 *   Use `history` to display recent commands, and `!number` to repeat a command by number.
-
-</div>
-
-<div class="challenges" markdown="1">
 
 ## Exercises
 
@@ -479,4 +473,3 @@ so she decides to get some coffee and catch up on her reading.
         $how -limit 0.01 NENE01729B.txt
     done
     ~~~
-</div>
