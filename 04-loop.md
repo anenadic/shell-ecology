@@ -1,11 +1,12 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Loops
+minutes:
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+## Learning Objectives
+
 *   Write a loop that applies one or more commands separately to each file in a set of files.
 *   Trace the values taken on by a loop variable during execution of the loop.
 *   Explain the difference between a variable's name and its value.
@@ -13,7 +14,7 @@ title: Loops
 *   Demonstrate how to see what commands have recently been executed.
 *   Re-run recently executed commands without retyping them.
 
-</div>
+## Lesson
 
 Wildcards and tab completion are two ways to reduce typing (and typing mistakes).
 Another is to tell the shell to do something over and over again.
@@ -264,7 +265,7 @@ mv unicorn.dat original-unicorn.dat
 > isn't foolproof, but it's a handy way to see what's going to happen when
 > you're still learning how loops work.
 
-#### Nelle's Pipeline: Processing Files 
+### Nelle's Pipeline: Processing Files
 
 Nelle is now ready to process her data files.
 Since she's still learning how to use the shell,
@@ -400,7 +401,8 @@ so she decides to get some coffee and catch up on her reading.
 
 <div class="keypoints" markdown="1">
 
-#### Key Points
+## Key Points
+
 *   A `for` loop repeats commands once for every thing in a list.
 *   Every `for` loop needs a variable to refer to the current "thing".
 *   Use `$name` to expand a variable (i.e., get its value).
@@ -409,11 +411,7 @@ so she decides to get some coffee and catch up on her reading.
 *   Use the up-arrow key to scroll up through previous commands to edit and repeat them.
 *   Use `history` to display recent commands, and `!number` to repeat a command by number.
 
-</div>
-
-<div class="challenges" markdown="1">
-
-#### Challenges
+## Exercises
 
 1.  Suppose that `ls` initially displays:
 
@@ -477,5 +475,3 @@ so she decides to get some coffee and catch up on her reading.
         $how -limit 0.01 NENE01729B.txt
     done
     ~~~
-
-</div>

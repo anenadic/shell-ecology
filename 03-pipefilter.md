@@ -55,7 +55,7 @@ $ wc *.pdb
 ~~~
 {:class="out"}
 
-> ### Wildcards
+> #### Wildcards
 > 
 > `*` is a [wildcard](../../gloss.html#wildcard). It matches zero or more
 > characters, so `*.pdb` matches `ethane.pdb`, `propane.pdb`, and so on.
@@ -288,7 +288,7 @@ can be combined with every other program that behaves this way as well.
 You can *and should* write your programs this way
 so that you and other people can put those programs into pipes to multiply their power.
 
-> ### Redirecting Input
+> #### Redirecting Input
 > 
 > As well as using `>` to redirect a program's output, we can use `<` to
 > redirect its input, i.e., to read from a file instead of from standard
