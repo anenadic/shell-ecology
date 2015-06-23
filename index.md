@@ -25,6 +25,11 @@ and tools for working with data so that they can get more done in less
 time, and with less pain. The lessons below were designed for those interested 
 in working with {{page.domain %}} data in {{page.topic %}}. 
 
+The Unix shell has been around longer than most of its users have been alive.
+It has survived so long because it’s a power tool that allows people to do complex
+things with just a few keystrokes. More importantly, it helps them combine existing
+programs in new ways and automate repetitive tasks so that they don’t have to type
+the same things over and over again.
 
 **Content Contributors: {{page.contributors | join: ', ' %}}**
 
