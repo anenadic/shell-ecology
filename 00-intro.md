@@ -1,17 +1,16 @@
 ---
 layout: lesson
-root: ../..
+root: .
 title: Introducing the Shell
+minutes:
 ---
-<div class="objectives" markdown="1">
 
-#### Objectives
+## Learning Objectives
+
 *   Explain how the shell relates to the keyboard, the screen, the operating system, and users' programs.
 *   Explain when and why command-line interfaces should be used instead of graphical interfaces.
 
-</div>
-
-#### What and Why
+## Lesson
 
 At a high level, computers do four things:
 
@@ -81,9 +80,7 @@ the command line is often the easiest way to interact with remote machines.
 As clusters and cloud computing become more popular for scientific data crunching,
 being able to drive them is becoming a necessary skill.
 
-<div class="keypoints" markdown="1">
-
-#### Key Points
+### Key Points
 *   A shell is a program whose primary purpose is to read commands and run other programs.
 *   The shell's main advantages are its high action-to-keystroke ratio,
     its support for automating repetitive tasks,
@@ -91,4 +88,5 @@ being able to drive them is becoming a necessary skill.
 *   The shell's main disadvantages are its primarily textual nature
     and how cryptic its commands and operation can be.
 
-</div>
+## Exercises
+
